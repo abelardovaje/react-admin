@@ -1,0 +1,44 @@
+.kad-navbar{
+    a{
+        color:white;
+    }
+}
+
+.app-header{
+    background:#0AC25A;
+}
+
+.navbar-nav{
+    a{
+        color:white;
+    }
+}
+
+.navbar-toggler-icon{
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    background:unset !important;
+}
+
+.navbar-toggler-icon::before{
+    content: "\F0C9";
+    color:white;
+    position: relative;
+    top: 5px;
+}
+
+.sidebar{
+    background:#efefef !important;
+    a.nav-link{
+        color:black !important;
+    }
+}
+.nav-title{
+    background:#d4d2d2 !important;
+    color:#717273 !important;
+}
+.main{
+    background:white !important;
+}
