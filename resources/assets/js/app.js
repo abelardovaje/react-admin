@@ -21,6 +21,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import 'simple-line-icons/css/simple-line-icons.css';
 // Import Main styles for this application
 import '../sass/coreui/style.scss';
+
 ReactDOM.render(
     <Router store={Store}/>,
     document.getElementById('root')

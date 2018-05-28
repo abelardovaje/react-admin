@@ -6,11 +6,12 @@ import Login from './login';
 import {
     BrowserRouter,
     Route,
-    Switch
+    Switch,
+    HashRouter
 } from 'react-router-dom';
 
 const AdminComponent = Loadable({
-    loader:() => import('./admin/adminComponent'),
+    loader:() => import('./admin/AdminComponent'),
     loading(){
         return <div>Loading..</div>
     }
@@ -22,17 +23,17 @@ const Root = () =>{
     )
 }
 
-const Router = (props) =>{
+const Router = (props) =>{    
     return (
         <Provider store={props.store}>
-            <BrowserRouter>
+            <HashRouter>
                 <div>                                      
                     <Switch>
                         <Route path="/" exact component={Root}/>
-                        <Route path="/admin" name="admin" exact component={AdminComponent}/>
+                        <Route path="/admin" name="admin" component={AdminComponent}/>
                     </Switch>
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         </Provider>
     )
 }

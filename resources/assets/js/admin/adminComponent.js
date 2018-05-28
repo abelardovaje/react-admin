@@ -3,7 +3,8 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import { Container } from 'reactstrap';
 import DefaultHeader from './layout/DefaultHeader';
 import DefaultFooter from './layout/DefaultFooter';
-import navigation from './_nav';
+import navigation from './shared/_nav';
+import routes from './shared/routes'
 import './admin.scss';
 import {
   AppAside,
@@ -33,7 +34,20 @@ const AdminComponent = (props) =>{
                     <AppSidebarMinimizer />
                 </AppSidebar>
                 <div className="main">
-                    Body
+                    <AppBreadcrumb appRoutes={routes}/>
+                    <Container fluid>
+                        <Switch>
+                            {routes.map((route,idx)=>{
+                                return route.component ? (
+                                    <Route key={idx} path={route.path} exact ={route.exact} 
+                                    name={route.name} render={props =>(
+                                        <route.component {...props}/>
+                                    )}/>):(null);                          
+                            })}
+                        
+                        </Switch>
+                    </Container>
+                   
                 </div>
             </div>
             <AppFooter>

@@ -16,45 +16,23 @@ export default {
     },
     {
       name: 'User Management',
-      url: '/theme/colors',
+      url: '/user',
       icon: 'icon-drop',
     },
     {
       name: 'Organization',
-      url: '/theme/typography',
+      url: '/organization',
       icon: 'icon-pencil',
     },
     {
       name: 'Roles',
-      url: '/base',
+      url: '/roles',
       icon: 'icon-puzzle',
     },
     {
       name: 'Permissions',
-      url: '/buttons',
-      icon: 'icon-cursor',
-      children: [
-        {
-          name: 'Buttons',
-          url: '/buttons/buttons',
-          icon: 'icon-cursor',
-        },
-        {
-          name: 'Button dropdowns',
-          url: '/buttons/button-dropdowns',
-          icon: 'icon-cursor',
-        },
-        {
-          name: 'Button groups',
-          url: '/buttons/button-groups',
-          icon: 'icon-cursor',
-        },
-        {
-          name: 'Brand Buttons',
-          url: '/buttons/brand-buttons',
-          icon: 'icon-cursor',
-        },
-      ],
+      url: '/admin/permission',
+      icon: 'icon-cursor'
     }
   
   ],
