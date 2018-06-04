@@ -2,7 +2,7 @@ export default {
   items: [
     {
       name: 'Dashboard',
-      url: '/dashboard',
+      url: '/admin/dashboard',
       icon: 'icon-speedometer'
     },
     {
@@ -16,18 +16,13 @@ export default {
     },
     {
       name: 'User Management',
-      url: '/user',
+      url: '/admin/user',
       icon: 'icon-drop',
     },
     {
       name: 'Organization',
-      url: '/organization',
+      url: '/admin/organization',
       icon: 'icon-pencil',
-    },
-    {
-      name: 'Roles',
-      url: '/roles',
-      icon: 'icon-puzzle',
     },
     {
       name: 'Permissions',

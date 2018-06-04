@@ -12,7 +12,14 @@
 */
 
 Route::get('/', function () {
+
     return view('index');
 });
 
+Route::get('/dashboard','UserController@index');
+
 Route::view('/admin','index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

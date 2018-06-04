@@ -23,7 +23,7 @@ const AdminComponent = (props) =>{
     return (
         <div className="app">
             <AppHeader fixed>
-                <DefaultHeader/>
+                {/* <DefaultHeader/> */}
             </AppHeader>
             <div className="app-body">
                 <AppSidebar fixed display="lg">
@@ -43,15 +43,15 @@ const AdminComponent = (props) =>{
                                     name={route.name} render={props =>(
                                         <route.component {...props}/>
                                     )}/>):(null);                          
-                            })}
-                        
+                            })}  
+                            <Redirect from="/admin" to="/admin/dashboard" />                     
                         </Switch>
-                    </Container>
-                   
+                      
+                    </Container>                  
                 </div>
             </div>
             <AppFooter>
-               <DefaultFooter/>
+               {/* <DefaultFooter/> */}
             </AppFooter>
         </div>
     )

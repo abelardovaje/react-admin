@@ -1,3 +1,5 @@
+$green:#0AC25A;
+$gray:#d4d2d2;
 .kad-navbar{
     a{
         color:white;
@@ -32,7 +34,22 @@
 .sidebar{
     background:#efefef !important;
     a.nav-link{
-        color:black !important;
+        color:black;
+        &:hover{
+            background: $gray !important;
+            color:$green !important;
+            i{
+                color:$green !important;
+            }
+        }
+
+        &.active{
+            background: #e4e4e4;
+            color:$green;
+            i{
+                color:$green !important;
+            }
+        }
     }
 }
 .nav-title{
@@ -41,4 +58,9 @@
 }
 .main{
     background:white !important;
+}
+
+.permission-container{
+    border:1px solid red;
+    height:100px;
 }

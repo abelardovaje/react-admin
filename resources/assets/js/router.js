@@ -2,7 +2,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import Loadable from 'react-loadable';
 // import AdminComponent from './admin/adminComponent';
-import Login from './login';
+import LoginComponent from './Login/LoginComponent';
 import {
     BrowserRouter,
     Route,
@@ -19,7 +19,7 @@ const AdminComponent = Loadable({
 
 const Root = () =>{
     return (
-       <Login/>
+       <LoginComponent/>
     )
 }
 
